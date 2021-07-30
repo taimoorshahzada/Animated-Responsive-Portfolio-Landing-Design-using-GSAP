@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding:0 ;
+}
+body{
+    background-color: cornsilk;
+    overflow: hidden;
+}
+header{
+    position: absolute;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    overflow: hidden;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    margin-left: 50px;
+
+}
+.logo a{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 550;
+    font-family: 'Monument'
+}
+.menu{
+    margin-right: 50px;
+
+}
+.menu a{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 500;
+
+}
+.center-text{
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+}
+.center-text .text{
+    text-align: center;
+    font-size: 28px;
+    z-index: 100;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+    font-family: 'Neutral Face';
+}
+.circle1{
+    position: absolute;
+    top: 35%;
+    left: 60%;
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 50%;
+}
+.circle2{
+    position: absolute;
+    left: 35%;
+    top: 60%;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+}
+.pic1 , .pic2, .pic3, .pic4{
+    position: absolute;
+    height: 120px;
+    width: 200px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic1{
+    top: 150px;
+    left: 200px;
+    background-image: url(pic1.jpg);
+}
+.pic2{
+    top: 200px;
+    right: 200px;
+    background-image: url(pic2.jpg);
+}
+.pic3{
+    bottom: 100px;
+    left: 250px;
+    background-image: url(pic3.jpg);
+}
+.pic4{
+    bottom: 120px;
+    right: 300px;
+    background-image: url(pic4.jpg);
+}
+@media only screen and (max-width: 1000px){
+    .pic2,.pic4{
+        display: none;
+    }
+    .logo a{
+        font-size: 18px;
+    }
+    .text{
+        font-size: 20px;
+    }
+}
